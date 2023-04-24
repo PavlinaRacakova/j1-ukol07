@@ -36,7 +36,7 @@ public class SvatkySluzba {
         // pomocí toList() převést na List
 
         List<String> svatkyKeDni = seznamSvatku.getSvatky().stream()
-                .filter(s -> s.getDen().equals(MonthDay.now()))
+                .filter(s -> s.getDen().equals(day))
                 .map(Svatek::getJmeno)
                 .toList();
 
